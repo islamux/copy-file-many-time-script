@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Set the file to be copied and the desired number of copies
+file_to_copy="elm_1_cubit.dart"
+num_copies=10
+
+# Create a loop to copy the file the specified number of times
+for (( i=1; i<=num_copies; i++ )); do
+  cp "$file_to_copy" "copy_$i.txt"
+done
+
+echo "Copied $num_copies files."
